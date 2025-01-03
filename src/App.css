@@ -1,0 +1,316 @@
+/* Basic Reset and Box-Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: manrope, sans-serif;
+  background-color: lightcyan;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Container Setup */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* Adjust button size for smaller screens */
+  button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  /* Resize headings and text */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .user-card {
+    padding: 15px;
+  }
+
+  /* Adjust user-card text */
+  .user-card p {
+    font-size: 14px;
+  }
+
+  .user-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  /* Adjust user table styling */
+  .user-table {
+    font-size: 0.9rem;
+  }
+
+  .user-table th, .user-table td {
+    padding: 8px 12px;
+    font-size: 0.7rem;
+  }
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-top: 35px;
+}
+
+/* User List Styling */
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.user-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Styling */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: left;
+  overflow-x: auto;
+}
+
+.user-table th, .user-table td {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Profile Styling */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.profile-card {
+  width: 80%;
+  max-width: 800px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.username {
+  font-size: 18px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 5px;
+}
+
+.section p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0073e6;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 15px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .profile-info h1 {
+    font-size: 20px;
+  }
+
+  .section h2 {
+    font-size: 15px;
+  }
+
+  .section p {
+    font-size: 14px;
+  }
+
+  .no-wrap {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+/* Animation and Fade-in */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #4CAF50;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

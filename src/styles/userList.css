@@ -1,0 +1,69 @@
+/* UserList.css */
+.user-grid-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-grid-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Adjusts the grid layout */
+  gap: 10px;
+}
+
+.grid-header {
+  display: contents;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+.grid-header span {
+  text-align: left;
+  padding: 10px;
+}
+
+.grid-row {
+  display: contents;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid-row span {
+  padding: 10px;
+}
+
+.grid-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.user-grid a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.user-grid a:hover {
+  text-decoration: underline;
+}
+
+.view-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
