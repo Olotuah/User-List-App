@@ -1,3 +1,4 @@
+HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# User-List-App
+The User List App is a responsive React-based web application designed to fetch and display a list of users from the JSONPlaceholder API. The app allows users to view basic details of each user and navigate to a detailed profile page for more information.ccf663a8c79eb57851010696ef3faa8c605e326f
